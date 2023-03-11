@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Weather App</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Noto+Serif&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <section id="1st">
+    <div id="main">
+        </div>
+  
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+            
+            <a id="we" href="#">Weather App</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#1st">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#2nd">About this App</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Delhi</a></li>
+                            <li><a class="dropdown-item" href="#">Bhopal</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Indore</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#p3rd">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input id="city" class="form-control me-2" type="search" placeholder="Enter the City" aria-label="Search">
+                    <button class="bt" type="submit" id="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</div>
+    <div class="container">
+        <h1 id="ss">Weather For <span id="cityname"></span></h1>
+
+        <div id="sun"><img src="image/cloud.png" alt=""></div>
+      
+        <main>
+            <h1 id="te" ><span id="temp3"></span> °C </h1>
+            <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm  border-primary">
+                        <div class="card-heade py-3">
+                            <h4 class="my-0 fw-normal hii">Temperature</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title"><span id="temp2"></span><small class="text-muted fw-light"> °C</small>
+                            </h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Temperature is <span id="temp"></span></li>
+                                <li>Min Temperature is <span id="min_temp"></span></li>
+                                <li>Max Temperature is <span id="max_temp"></span></li>
+
+                            </ul>
+                            <!-- <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm  border-primary">
+                        <div class="card-heade py-3 ">
+                            <h4 class="my-0 fw-normal hii">Humidity Info</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title"><span id="humidity2"></span><small class="text-muted fw-light"> %</small>
+                            </h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Feels Like is <span id="feels_like"></span></li>
+                                <li>Humidity is <span id="humidity"></span></li>
+                                <li>Wind Speed is <span id="wind_speed"></span></li>
+                            </ul>
+                            <!-- <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                        <div class="card-heade py-3  ">
+                            <h4 class="my-0 fw-normal hii">Wind Info</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title"><span id="wind_speed2"></span><small class="text-muted fw-light"> km/h</small>
+                            </h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+
+                                <li>Wind Degree is <span id="wind_degrees"></span></li>
+                                <li>Sunrise is <span id="sunrise"></span></li>
+                                <li>Sunset is <span id="sunset"></span></li>
+                            </ul>
+                            <!-- <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+          
+            
+        </main>
+        
+    </div>
+</section>
+    <div class="b-example-divider"> </div>
+  
+    <sectioni id="2nd">
+    <div class=" py-5 my-5 text-center">
+        
+        <!-- <img class="d-block mx-auto mb-4" src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57"> -->
+        <h1 class="container">About this App</h1>
+        <div class="col-lg-6 mx-auto">
+          <p id="about">This project on world city forecasts is to explore the wider exchange and availability of official weather information on the Internet.</p>
+          <p id="about">This global website presents OFFICIAL weather observations, weather forecasts and climatological information.</p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <!-- <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
+            <button type="button" class="btn btn-outline-pbtn-primary btn-lg px-4">pbtn-primary</button> -->
+          </div>
+        </div>
+      </div>
+    </section>
+      <div class="b-example-divider"> </div>
+      <section id="p3rd">
+        <div class="container marketing">
+             <h1 id="contact">Contact us</h1>
+            <!-- Three columns of text below the carousel -->
+            <div class="row">
+              <div class="col-lg-4">
+                <img id="linkedin" src="image/linkedin.png" alt="">
+                 <h2 class="fw-normal">Linkedin</h2>
+                <p>This is my Linkedin Id. If you want to know about me then visit this.</p>
+                <p><a class="btn btn-primary" href="https://www.linkedin.com/in/vaishnavi2445/" target="_blank">View details »</a></p>
+              </div><!-- /.col-lg-4 -->
+              <div class="col-lg-4">
+                <img id="twiter" src="image/twiter.png" alt="">
+                    <h2 class="fw-normal">Twiter</h2>
+                <p>This is my Twiter Id. If you want to know about me then visit this.</p>
+                <p><a class="btn btn-primary" href="https://twitter.com/Vaishnavi2445" target="_blank">View details »</a></p>
+              </div><!-- /.col-lg-4 -->
+              <div class="col-lg-4">
+                <img src="image/mail.png" alt="" id="mail">
+                <h2 class="fw-normal">Gmail</h2>
+                <p>This is my Gmail. If you want to Contact me then use this Mail Id.</p>
+                <p><a class="btn btn-primary" href="vaishnaviguptamjh17@gmail.com" target="_blank">View details »</a></p>
+              </div><!-- /.col-lg-4 -->
+            </div><!-- /.row -->
+        
+        
+           
+        
+          </div>
+    </section>
+    <div class="b-example-divider"> </div>
+
+    <section id="four">
+      <div class="card text-center">
+        <div class="card-header">
+          
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Thanks for Visiting!</h5>
+          <p class="card-text container" >Wherever you go, no matter what the weather, always bring your own sunshine. </p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+        <div class="card-footer text-muted">
+         !-!
+        </div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="javaScript/script.js"></script>
+</body>
+
+</html>
